@@ -1,0 +1,109 @@
+/** W3C **/
+html {
+    font-size: 14px;
+    background-color: #FFF;
+}
+body {
+    font-family: Univers, Arial, sans-serif, "ヒラギノ角ゴ Std W3", "HiraKakuStd-W3", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+    background-color: #FFF;
+    color: #000;
+}
+
+
+/** Bootstrap **/
+.collapsing {
+    transition: height 0s ease;
+}
+
+
+/** Custom **/
+#header {
+    background-color: #1586D1;
+}
+#header .navbar-brand img {
+    height: 23px;
+    background-color: #FFF;
+    border-radius: 2px;
+    padding: 1px;
+    margin-right: 0.5rem;
+    transform: rotate(-30deg);
+}
+#header .fa-chevron-left {
+    display: none;
+}
+#header .collapsed .fa-chevron-right {
+    display: none;
+}
+#header .collapsed .fa-chevron-left {
+    display: block;
+}
+
+#sidebar_frame {
+    position: relative;
+}
+#sidebar_frame.collapse {
+    display: block;
+    overflow: hidden;
+    width: 48px;
+}
+#sidebar_frame.collapse.show {
+    width: 320px;
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100%;
+}
+#sidebar .user {
+    color: #000;
+}
+#sidebar .user:hover {
+    text-decoration: none;
+}
+#sidebar .user img {
+    width: 3rem;
+    height: 3rem;
+}
+#sidebar .external_link {
+    font-size: 1.5rem;
+}
+#sidebar .pin {
+    padding: 0;
+    text-align: left;
+}
+#sidebar .pin .fa-map-marker-alt {
+    font-size: 1.5rem;
+    color: #FFAE00;
+}
+#sidebar_frame.collapse.show #sidebar {
+    position: initial;
+}
+#sidebar_frame #arrow {
+    position: absolute;
+    font-size: 2rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    color: #1586D1;
+}
+#sidebar_inner {
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-basis: 0;
+    width: 320px;
+}
+#arrow {
+    cursor: pointer;
+}
+
+.navbar-brand img {
+    height: 2rem;
+    vertical-align: bottom;
+}
+.line_height_15 {
+    line-height: 1.5em;
+}
+.line_height_20 {
+    line-height: 2em;
+}
